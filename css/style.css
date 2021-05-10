@@ -1,0 +1,106 @@
+#container_menu {
+    background-color: #ffffff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 30px);
+}
+
+#container_menu a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* --------------------------------- */
+
+#container_menu .logo {
+    transition: .1s;
+    font-weight: 600;
+}
+
+#container_menu .logo > a {
+    display: flex;
+}
+
+#container_menu .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px;
+}
+
+#container_menu .items > a {
+    transition: .1s;
+    padding: 0 8px;
+    margin: 2px;
+    white-space: nowrap;
+}
+
+#container_menu .social_media {
+    white-space: nowrap;
+}
+
+#container_menu .social_media i {
+    transition: .1s;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+/* HOVER */
+#container_menu .logo:hover, #container_menu .items > a:hover, #container_menu .social_media i:hover {
+    transition: .1s;
+    color: #414141;
+    transform: scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    #container_menu {
+        height: 50px;
+    }
+
+    #container_menu .items {
+        transition: 1s;
+        overflow: hidden;
+        background-color: #4d4d4d;
+        background-image: linear-gradient( 45deg, black 25%, transparent );
+        position: fixed;
+        flex-direction: column;
+        top: 80px;
+        margin-left: -15px;
+        width: 10px;
+        height: 100%;
+        white-space: nowrap;
+        padding: 5px 0px;
+        justify-content: flex-start;
+    }
+
+    #container_menu .items:hover {
+        transition: 1s;
+        width: 200px;
+    }
+
+    #container_menu .items > a {
+        width: calc(100% - 15px);
+        margin: 0 0 0 15px;
+        padding: 5px 0px;
+        color: #f3f2ef;
+        transition: 0s;
+    }
+
+    #container_menu .items > a:hover {
+        background-color: #f3f2ef;
+        transform: scale(1.00);
+        margin-left: 0;
+        padding-left: 15px;
+        box-shadow: 0px 0px 5px 0px white;
+        transition: 0s;
+    }
+
+}
