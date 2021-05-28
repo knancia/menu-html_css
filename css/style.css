@@ -79,6 +79,9 @@
         padding: 10px 7px;
         border-radius: 7px;
         opacity: 1;
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
     }
 
     #container_menu .items {
