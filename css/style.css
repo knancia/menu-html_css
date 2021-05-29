@@ -64,13 +64,6 @@
     transition: .1s;
     color: var(--s-color);
     transform: scale(1.05);
-<<<<<<< HEAD
-
-}
-
-#container_topbar .container_menu > a:hover {
-=======
->>>>>>> 185d3be53ffc67e5679587e208cbc5bfc61bab6d
     background-color: #00000010;
     border-radius: 5px;
 }
